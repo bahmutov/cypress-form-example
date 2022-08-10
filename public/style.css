@@ -1,5 +1,24 @@
+/* by default the site uses light color theme */
 *,
 body {
   background-color: #eee;
   color: #333;
+}
+
+/* if the user operating system prefers the dark color theme */
+@media (prefers-color-scheme: dark) {
+  *,
+  body {
+    background: #000;
+    color: #666;
+  }
+}
+
+/* if the user operating system prefers the light color theme */
+@media (prefers-color-scheme: light) {
+  *,
+  body {
+    background: white;
+    color: #000;
+  }
 }
